@@ -1,0 +1,72 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  margin-left: 250px;
+  padding-top: 100px;
+  transition: margin-left 0.3s ease;
+  overflow-x: auto;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 0;
+}
+
+.sidebar.closed ~ .main-content {
+  margin-left: 60px;
+}
+
+.toggle-button {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1001;
+  background: #6D214F;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: whitesmoke;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.documents-container {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 30px; /* Espaço para barra de rolagem */
+  min-width: fit-content; /* Força container a crescer com conteúdo */
+}
+
+/* Estilização da barra de rolagem */
+.main-content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: #6D214F;
+  border-radius: 4px;
+}

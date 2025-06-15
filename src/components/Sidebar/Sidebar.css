@@ -1,0 +1,169 @@
+:root {
+  --fonte-titulo: 'Playfair Display', serif; /* Fonte sofisticada */
+  --fonte-corpo: 'Roboto', sans-serif;
+  --vinho: #6D214F;
+  --vinho-escuro: #4A1530;
+  --branco: #FFFF;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--vinho);
+  color: var(--branco);
+  border-radius: 0 !important;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-title {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: 500;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1.5px solid var(--vinho-escuro);
+  transition: border-color 0.3s ease;
+}
+
+.sidebar.closed .sidebar-header {
+  border-bottom-color: transparent; /* esconde borda */
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Botão Criar Documento */
+.create-document-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 85%;
+  margin: 20px auto;
+  padding: 14px;
+  background: linear-gradient(135deg, #8B3A62 0%, #6D214F 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(109, 33, 79, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.create-document-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.create-document-btn:hover::before {
+  left: 100%;
+}
+
+.create-document-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(109, 33, 79, 0.4);
+}
+
+.create-document-btn:active {
+  transform: translateY(1px);
+}
+
+.create-document-btn .material-icons {
+  font-size: 1.4em;
+}
+
+/* Adiciona ícone aos itens regulares */
+.sidebar-item .material-icons {
+  margin-right: 10px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.sidebar-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.sidebar-item {
+  width: 100%;
+  padding: 16px !important;
+  border: none;
+  border-radius: 0 !important;
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--fonte-corpo);
+  font-weight: 400;
+  transition: background 0.36s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.active {
+  background: #4A1530;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
