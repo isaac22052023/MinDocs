@@ -1,3 +1,5 @@
+
+
 .app {
   display: flex;
   min-height: 100vh;
@@ -36,7 +38,6 @@
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
   color: whitesmoke;
   margin-bottom: 30px;
   font-weight: 500;

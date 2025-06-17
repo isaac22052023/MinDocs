@@ -1,10 +1,10 @@
-:root {
-  --fonte-titulo: 'Playfair Display', serif; /* Fonte sofisticada */
+/*:root {
+  --fonte-titulo: 'Playfair Display', serif; /* Fonte sofisticada 
   --fonte-corpo: 'Roboto', sans-serif;
   --vinho: #6D214F;
   --vinho-escuro: #4A1530;
   --branco: #FFFF;
-}
+}*/
 
 .sidebar {
   position: fixed;
