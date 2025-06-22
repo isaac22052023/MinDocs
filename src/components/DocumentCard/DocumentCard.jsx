@@ -11,7 +11,7 @@ export function DocumentCard({ title, code, date, updatedBy = [] }) {
       <h3 className="document-title">{title}</h3>
       
       <div className="updated-section">
-        <h4 className="section-title">Atualizado</h4>
+        <h4 className="section-title">Atualizado </h4>
         <ul className="person-list">
           {updatedBy.map((person, index) => (
             <li key={index} className="person-item">
