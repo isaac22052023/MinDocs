@@ -1,7 +1,6 @@
-import React from 'react';
 import './DocumentCard.css';
 
-const DocumentCard = ({ title, code, date, updatedBy }) => {
+export function DocumentCard({ title, code, date, updatedBy = [] }) {
   return (
     <div className="document-card">
       <div className="card-header">

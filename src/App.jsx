@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import DocumentCard from './components/DocumentCard/DocumentCard';
+// import LoginPage from './Pages/Login/LoginPage';
 import './App.css';
 
 function App() {
