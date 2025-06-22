@@ -1,19 +1,27 @@
+.section_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .document-card {
-  background: white;
+  background: #ffffff;
+  width: 300px;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
   margin-bottom: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 3px solid #6D214F; /* Borda lateral vinho */
-  flex: 0 0 350px; /* Largura fixa, sem crescer/encolher */
-  height: 250px; /* Altura fixa para alinhamento */
+  margin-top: 200px;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  border-left: 3px solid #6D214F; /* Borda lateral vinho /
+  height: 250px; / Altura fixa para alinhamento /
   display: flex;
   flex-direction: column;
 }
 
 .new-card-space {
-  min-width: 100px; /* Espaço visual para novos itens */
+  min-width: 100px; / Espaço visual para novos itens /
 }
 
 .document-card:hover {
@@ -30,7 +38,7 @@
 
 .document-code {
   font-weight: 600;
-  color: #6D214F; /* Vinho */
+  color: #6D214F; / Vinho */
   letter-spacing: 0.5px;
 }
 
