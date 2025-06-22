@@ -1,6 +1,5 @@
 /*import React, { useState, useEffect } from 'react';
-import './LoginPage.css';
-//imagens
+import './Login.css';
 import bg1 from '/src/assets/Images/LoginBackground1.webp';
 import bg2 from '/src/assets/Images/LoginBackground2.webp'; 
 import bg3 from '/src/assets/Images/LoginBackground3.webp';
@@ -8,7 +7,7 @@ import bg4 from '/src/assets/Images/LoginBackground4.webp';
 
 const backgroundImages = [bg1, bg2, bg3, bg4];
 
-const LoginPage = () => {
+export function Login () {
   const [currentBackground, setCurrentBackground] = useState('');
   const [email, setEmail] = useState('');
 
@@ -90,6 +89,4 @@ const LoginPage = () => {
       </div>
     </div>
   );
-};
-
-export default LoginPage;
+};*/
