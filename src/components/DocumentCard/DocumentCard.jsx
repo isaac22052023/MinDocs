@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './DocumentCard.css';
 
-export function DocumentCard () {
+export function DocumentCard() {
   const [documents] = useState([
     {
       id: 1,
@@ -24,13 +24,34 @@ export function DocumentCard () {
       title: "Termo de devolução de ativo",
       updatedBy: ["Isaac Silveira Marques", "Pedro"]
     },
+    // Adicione mais documentos para testar (pelo menos 5)
+    {
+      id: 4,
+      code: "TR_886686-isilveira",
+      date: "01 de jun. de 2025 10:15",
+      title: "Termo de renovação",
+      updatedBy: ["Ana Silva", "Carlos"]
+    },
+    {
+      id: 5,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },
+    {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    }
   ]);
 
   return (
-    <>
-      {documents.map((doc) => (
-        <section className="section_card">
-
+    <div className="documents-page-container">
+      <div className="documents-grid-container">
+        {documents.map((doc) => (
           <div className="document-card" key={doc.id}>
             <div className="card-header">
               <span className="document-code">{doc.code}</span>
@@ -50,9 +71,8 @@ export function DocumentCard () {
               </ul>
             </div>
           </div>
-          
-        </section>
-      ))}
-    </>
+        ))}
+      </div>
+    </div>
   );
 }
