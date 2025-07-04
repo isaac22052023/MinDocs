@@ -13,7 +13,7 @@
 }
 
 .document-card {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -60,7 +60,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limita a 2 linhas */
   -webkit-box-orient: vertical;
 }
 

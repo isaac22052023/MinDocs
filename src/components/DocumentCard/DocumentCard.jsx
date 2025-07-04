@@ -45,7 +45,42 @@ export function DocumentCard() {
       date: "02 de jun. de 2025 14:30",
       title: "Termo de cancelamento",
       updatedBy: ["Paula", "Roberto"]
-    }
+    },
+    {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },
+        {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },
+        {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },
+        {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },
+        {
+      id: 6,
+      code: "TR_886686-isilveira",
+      date: "02 de jun. de 2025 14:30",
+      title: "Termo de cancelamento",
+      updatedBy: ["Paula", "Roberto"]
+    },   
   ]);
 
   return (
