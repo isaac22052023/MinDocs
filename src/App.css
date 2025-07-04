@@ -42,30 +42,3 @@ h1 {
   font-size: 2em;
 }
 
-.documents-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 25px;
-}
-
-.documents-container {
-  display: flex;
-  gap: 25px;
-  padding-bottom: 30px; /* Espaço para barra de rolagem */
-  min-width: fit-content; /* Força container a crescer com conteúdo */
-}
-
-/* Estilização da barra de rolagem */
-.main-content::-webkit-scrollbar {
-  height: 8px;
-}
-
-.main-content::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.main-content::-webkit-scrollbar-thumb {
-  background: #6D214F;
-  border-radius: 4px;
-}
