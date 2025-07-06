@@ -33,7 +33,11 @@ const backgroundImages = [bg1, bg2, bg3, bg4];
 
   const handleForgotPassword = () => {
     console.log('Esqueci minha senha');
-    // Aqui você pode adicionar a lógica para recuperação de senha
+    //adicionar a lógica para recuperação de senha
+  };
+  const handleCreateAccount = () => {
+    console.log('Criar uma conta');
+    //adicionar a lógica para recuperação de senha
   };
 
   return (
@@ -73,7 +77,10 @@ const backgroundImages = [bg1, bg2, bg3, bg4];
             Entrar
           </button>
           
-          <a href="#" onClick={handleForgotPassword} className="forgot-password-link">
+          <a href="/register" onClick={handleForgotPassword} className="links">
+            Criar uma conta
+          </a>
+          <a href="#" onClick={handleForgotPassword} className="links">
             Esqueci minha senha
           </a>
         </div>
