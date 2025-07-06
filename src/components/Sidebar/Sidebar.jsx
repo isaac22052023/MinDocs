@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Sidebar.css';
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
   const [activeItem, setActiveItem] = useState('meus-documentos');
+  const navigate = useNavigate();
 
   const menuItems = [
     { id: 'meus-documentos', label: 'Meus Documentos' },
     { id: 'compartilhados', label: 'Documentos Compartilhados' },
     { id: 'agendados', label: 'Documentos Agendados' },
   ];
+
+  const handleCreateDocument = () => {
+    navigate('/criar-documento');
+    setActiveItem(''); // Limpa o item ativo
+  };
+
+  const handleNavigate = (id) => {
+    setActiveItem(id);
+    navigate(`/${id}`);
+  };
 
   return (
     <>
@@ -23,7 +35,10 @@ export function Sidebar() {
 
         {isOpen && (
           <>
-            <button className="create-document-btn">
+            <button 
+              className="create-document-btn"
+              onClick={handleCreateDocument}
+            >
               <span className="material-icons">add_circle</span>
               Criar Documento
             </button>

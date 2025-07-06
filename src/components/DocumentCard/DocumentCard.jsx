@@ -24,7 +24,6 @@ export function DocumentCard() {
       title: "Termo de devolução de ativo",
       updatedBy: ["Isaac Silveira Marques", "Pedro"]
     },
-    // Adicione mais documentos para testar (pelo menos 5)
     {
       id: 4,
       code: "TR_886686-isilveira",
@@ -83,13 +82,12 @@ export function DocumentCard() {
     },   
   ]);
 
-  return (
+return (
     <div className="documents-page-container">
       <div className="documents-grid-container">
         {documents.map((doc) => (
           <div className="document-card" key={doc.id}>
             <div className="card-header">
-              <span className="document-code">{doc.code}</span>
               <span className="document-date">{doc.date}</span>
             </div>
 
