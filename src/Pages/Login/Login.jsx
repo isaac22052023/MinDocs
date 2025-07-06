@@ -80,7 +80,7 @@ const backgroundImages = [bg1, bg2, bg3, bg4];
           <a href="/register" onClick={handleForgotPassword} className="links">
             Criar uma conta
           </a>
-          <a href="#" onClick={handleForgotPassword} className="links">
+          <a href="/" onClick={handleForgotPassword} className="links">
             Esqueci minha senha
           </a>
         </div>
